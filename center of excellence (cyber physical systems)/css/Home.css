@@ -1,0 +1,176 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #faf3e0; /* Soft Beige Background */
+  color: #333; /* Dark Gray Text */
+  font-size: 16px;
+  font-weight: 530;
+}
+
+/* Department Header Styling */
+.department-header {
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Header Styling */
+header {
+  background-color: #004d99; /* Navy Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo img {
+  height: 80px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+header .title h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+header .sub-title h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  letter-spacing: 2px;
+}
+
+/* Glowing Animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #e4dee0, 0 0 20px #ffffff, 0 0 30px #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 20px #151ce4, 0 0 30px #151ce4;
+  }
+}
+
+/* Navigation Styling */
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Section Styling */
+section {
+  padding: 40px;
+  margin: 20px 0;
+  background-color: white; /* White Section Background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #004d99; /* Navy Blue */
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+section p, section .member {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444; /* Slightly darker gray for contrast */
+  margin-bottom: 20px;
+}
+
+/* Member Styling */
+.member {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.member h3 {
+  font-size: 20px;
+  color: #004d99; /* Navy Blue */
+  margin-bottom: 5px;
+}
+
+.member span {
+  font-size: 16px;
+  color: #777; /* Lighter Gray */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #004d99; /* Navy Blue */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Mobile Responsive Navigation */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+}
